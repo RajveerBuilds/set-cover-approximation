@@ -25,13 +25,13 @@ The experiments produce two plots:
 - `solution_quality.png` compares the number of sets selected by greedy vs optimal (when available).
 - `runtime_comparison.png` compares how runtime grows with problem size for both methods.
 
-## How to run
-```bash
-pip install -r requirements.txt
-python main.py --max_n 12
-
 ## Observations
 As the problem size increases, the bounded exact search quickly becomes impractically slow due to exponential growth in the number of combinations explored, while the greedy algorithm continues to run efficiently. In small instances, greedy often matches the optimal solution, but as instances grow, greedy may select more sets than the optimal solution. This highlights the practical trade-off between optimality and computational efficiency in NP-hard optimization problems.
 
 ## Why this project
 This project was built to demonstrate how approximation algorithms are used to handle NP-hard problems in real-world settings where exact solutions are computationally infeasible. By empirically comparing greedy approximation with bounded exact search, the project highlights the importance of algorithmic trade-offs between solution quality and scalability, a core idea in optimization, theoretical computer science, and performance-critical systems.
+
+## How to run
+```bash
+pip install -r requirements.txt
+python main.py --max_n 12
